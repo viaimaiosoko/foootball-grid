@@ -44,6 +44,85 @@
     .arrow-blue-left::before { content: '← BOUNDARY'; color: blue; font-weight: bold; }
     .arrow-blue-right::before { content: 'BOUNDARY →'; color: blue; font-weight: bold; float: right; }
   </style>
+
+<style>
+  .pink-zone { background-color: #f4cccc; }
+  .blue-zone { background-color: #cfe2f3; }
+  .black-row  { background-color: #000; }
+  .header-blue { background-color: #3a5ca6; color: white; font-family: 'Arial Narrow', Arial, sans-serif; font-weight: bold; font-size: 11px; display: flex; align-items: center; justify-content: center; }
+  .header-red  { background-color: #a61c1c; color: white; font-family: 'Arial Narrow', Arial, sans-serif; font-weight: bold; font-size: 11px; display: flex; align-items: center; justify-content: center; }
+  .border-top { border-top: 2px solid black; }
+  .border-bottom { border-bottom: 2px solid black; }
+  .border-left { border-left: 2px solid black; }
+  .border-right { border-right: 2px solid black; }
+</style>
+
+
+<style>
+  .pink-zone { background-color: #f4cccc; }
+  .blue-zone { background-color: #cfe2f3; }
+  .black-row  { background-color: #000; }
+  .header-blue { background-color: #3a5ca6; color: white; font-family: 'Arial Narrow', Arial, sans-serif; font-weight: bold; font-size: 11px; display: flex; align-items: center; justify-content: center; }
+  .header-red  { background-color: #a61c1c; color: white; font-family: 'Arial Narrow', Arial, sans-serif; font-weight: bold; font-size: 11px; display: flex; align-items: center; justify-content: center; }
+  .border-top { border-top: 2px solid black; }
+  .border-bottom { border-bottom: 2px solid black; }
+  .border-left { border-left: 2px solid black; }
+  .border-right { border-right: 2px solid black; }
+</style>
+
+<style>
+  .row-19, .row-41 {
+    background-color: #3a5ca6;  /* dark blue */
+    color: white;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+  }
+  .row-41 {
+    background-color: #a61c1c;  /* dark red */
+  }
+  .black-row-no-border {
+    background-color: #000;
+    border: none !important;
+  }
+  .no-border { border: none !important; }
+  .border-vertical {
+    border-left: 2px solid black;
+  }
+  .nowrap-small {
+    white-space: nowrap;
+    font-size: 9px;
+    overflow: hidden;
+  }
+</style>
+
+<style>
+  .row-19, .row-41, .row-22 {
+    border: none !important;
+  }
+  .row-19 {
+    background-color: #3a5ca6;
+    color: white;
+  }
+  .row-41 {
+    background-color: #a61c1c;
+    color: white;
+  }
+  .row-22 {
+    background-color: black;
+  }
+  .nowrap-small {
+    white-space: nowrap;
+    font-size: 9px;
+    overflow: hidden;
+    text-align: center;
+  }
+</style>
+
 </head>
 <body>
   <h2>Football Grid</h2>
@@ -101,59 +180,59 @@
 <div class="label-top">AX</div>
 <div class="label-top">AY</div>
 <div class="label-left">1</div>
-<div class="cell pink-zone" data-row="1" data-col="0"></div>
-<div class="cell border-thick" data-row="1" data-col="1"></div>
-<div class="cell border-thick" data-row="1" data-col="2"></div>
-<div class="cell border-thick" data-row="1" data-col="3"></div>
-<div class="cell border-thick" data-row="1" data-col="4"></div>
-<div class="cell border-thick" data-row="1" data-col="5"></div>
-<div class="cell border-thick" data-row="1" data-col="6"></div>
-<div class="cell border-thick" data-row="1" data-col="7"></div>
-<div class="cell border-thick" data-row="1" data-col="8"></div>
-<div class="cell border-thick" data-row="1" data-col="9"></div>
-<div class="cell border-thick" data-row="1" data-col="10"></div>
-<div class="cell border-thick" data-row="1" data-col="11"></div>
-<div class="cell border-thick" data-row="1" data-col="12"></div>
-<div class="cell border-thick" data-row="1" data-col="13"></div>
-<div class="cell border-thick" data-row="1" data-col="14"></div>
-<div class="cell border-thick" data-row="1" data-col="15"></div>
-<div class="cell border-thick" data-row="1" data-col="16"></div>
-<div class="cell border-thick" data-row="1" data-col="17"></div>
-<div class="cell border-thick" data-row="1" data-col="18"></div>
-<div class="cell border-thick" data-row="1" data-col="19"></div>
-<div class="cell border-thick" data-row="1" data-col="20"></div>
-<div class="cell border-thick" data-row="1" data-col="21"></div>
-<div class="cell border-thick" data-row="1" data-col="22"></div>
-<div class="cell border-thick" data-row="1" data-col="23"></div>
-<div class="cell border-thick" data-row="1" data-col="24"></div>
-<div class="cell border-thick" data-row="1" data-col="25"></div>
-<div class="cell border-thick" data-row="1" data-col="26"></div>
-<div class="cell border-thick" data-row="1" data-col="27"></div>
-<div class="cell border-thick" data-row="1" data-col="28"></div>
-<div class="cell border-thick" data-row="1" data-col="29"></div>
-<div class="cell border-thick" data-row="1" data-col="30"></div>
-<div class="cell border-thick" data-row="1" data-col="31"></div>
-<div class="cell border-thick" data-row="1" data-col="32"></div>
-<div class="cell border-thick" data-row="1" data-col="33"></div>
-<div class="cell border-thick" data-row="1" data-col="34"></div>
-<div class="cell border-thick" data-row="1" data-col="35"></div>
-<div class="cell border-thick" data-row="1" data-col="36"></div>
-<div class="cell border-thick" data-row="1" data-col="37"></div>
-<div class="cell border-thick" data-row="1" data-col="38"></div>
-<div class="cell border-thick" data-row="1" data-col="39"></div>
-<div class="cell border-thick" data-row="1" data-col="40"></div>
-<div class="cell border-thick" data-row="1" data-col="41"></div>
-<div class="cell border-thick" data-row="1" data-col="42"></div>
-<div class="cell border-thick" data-row="1" data-col="43"></div>
-<div class="cell border-thick" data-row="1" data-col="44"></div>
-<div class="cell border-thick" data-row="1" data-col="45"></div>
-<div class="cell border-thick" data-row="1" data-col="46"></div>
-<div class="cell border-thick" data-row="1" data-col="47"></div>
-<div class="cell border-thick" data-row="1" data-col="48"></div>
-<div class="cell border-thick" data-row="1" data-col="49"></div>
-<div class="cell blue-zone" data-row="1" data-col="50"></div>
+<div class="cell pink-zone border-top border-left" data-row="1" data-col="0"></div>
+<div class="cell border-top" data-row="1" data-col="1"></div>
+<div class="cell border-top" data-row="1" data-col="2"></div>
+<div class="cell border-top" data-row="1" data-col="3"></div>
+<div class="cell border-top" data-row="1" data-col="4"></div>
+<div class="cell border-top" data-row="1" data-col="5"></div>
+<div class="cell border-top" data-row="1" data-col="6"></div>
+<div class="cell border-top" data-row="1" data-col="7"></div>
+<div class="cell border-top" data-row="1" data-col="8"></div>
+<div class="cell border-top" data-row="1" data-col="9"></div>
+<div class="cell border-top" data-row="1" data-col="10"></div>
+<div class="cell border-top" data-row="1" data-col="11"></div>
+<div class="cell border-top" data-row="1" data-col="12"></div>
+<div class="cell border-top" data-row="1" data-col="13"></div>
+<div class="cell border-top" data-row="1" data-col="14"></div>
+<div class="cell border-top" data-row="1" data-col="15"></div>
+<div class="cell border-top" data-row="1" data-col="16"></div>
+<div class="cell border-top" data-row="1" data-col="17"></div>
+<div class="cell border-top" data-row="1" data-col="18"></div>
+<div class="cell border-top" data-row="1" data-col="19"></div>
+<div class="cell border-top" data-row="1" data-col="20"></div>
+<div class="cell border-top" data-row="1" data-col="21"></div>
+<div class="cell border-top" data-row="1" data-col="22"></div>
+<div class="cell border-top" data-row="1" data-col="23"></div>
+<div class="cell border-top" data-row="1" data-col="24"></div>
+<div class="cell border-top" data-row="1" data-col="25"></div>
+<div class="cell border-top" data-row="1" data-col="26"></div>
+<div class="cell border-top" data-row="1" data-col="27"></div>
+<div class="cell border-top" data-row="1" data-col="28"></div>
+<div class="cell border-top" data-row="1" data-col="29"></div>
+<div class="cell border-top" data-row="1" data-col="30"></div>
+<div class="cell border-top" data-row="1" data-col="31"></div>
+<div class="cell border-top" data-row="1" data-col="32"></div>
+<div class="cell border-top" data-row="1" data-col="33"></div>
+<div class="cell border-top" data-row="1" data-col="34"></div>
+<div class="cell border-top" data-row="1" data-col="35"></div>
+<div class="cell border-top" data-row="1" data-col="36"></div>
+<div class="cell border-top" data-row="1" data-col="37"></div>
+<div class="cell border-top" data-row="1" data-col="38"></div>
+<div class="cell border-top" data-row="1" data-col="39"></div>
+<div class="cell border-top" data-row="1" data-col="40"></div>
+<div class="cell border-top" data-row="1" data-col="41"></div>
+<div class="cell border-top" data-row="1" data-col="42"></div>
+<div class="cell border-top" data-row="1" data-col="43"></div>
+<div class="cell border-top" data-row="1" data-col="44"></div>
+<div class="cell border-top" data-row="1" data-col="45"></div>
+<div class="cell border-top" data-row="1" data-col="46"></div>
+<div class="cell border-top" data-row="1" data-col="47"></div>
+<div class="cell border-top" data-row="1" data-col="48"></div>
+<div class="cell border-top" data-row="1" data-col="49"></div>
+<div class="cell blue-zone border-top border-right" data-row="1" data-col="50"></div>
 <div class="label-left">2</div>
-<div class="cell pink-zone" data-row="2" data-col="0"></div>
+<div class="cell pink-zone border-left" data-row="2" data-col="0"></div>
 <div class="cell " data-row="2" data-col="1"></div>
 <div class="cell " data-row="2" data-col="2"></div>
 <div class="cell " data-row="2" data-col="3"></div>
@@ -203,9 +282,9 @@
 <div class="cell " data-row="2" data-col="47"></div>
 <div class="cell " data-row="2" data-col="48"></div>
 <div class="cell " data-row="2" data-col="49"></div>
-<div class="cell blue-zone" data-row="2" data-col="50"></div>
+<div class="cell blue-zone border-right" data-row="2" data-col="50"></div>
 <div class="label-left">3</div>
-<div class="cell pink-zone" data-row="3" data-col="0"></div>
+<div class="cell pink-zone border-left" data-row="3" data-col="0"></div>
 <div class="cell " data-row="3" data-col="1"></div>
 <div class="cell " data-row="3" data-col="2"></div>
 <div class="cell " data-row="3" data-col="3"></div>
@@ -255,9 +334,9 @@
 <div class="cell " data-row="3" data-col="47"></div>
 <div class="cell " data-row="3" data-col="48"></div>
 <div class="cell " data-row="3" data-col="49"></div>
-<div class="cell blue-zone" data-row="3" data-col="50"></div>
+<div class="cell blue-zone border-right" data-row="3" data-col="50"></div>
 <div class="label-left">4</div>
-<div class="cell pink-zone" data-row="4" data-col="0"></div>
+<div class="cell pink-zone border-left" data-row="4" data-col="0"></div>
 <div class="cell " data-row="4" data-col="1"></div>
 <div class="cell " data-row="4" data-col="2"></div>
 <div class="cell " data-row="4" data-col="3"></div>
@@ -307,9 +386,9 @@
 <div class="cell " data-row="4" data-col="47"></div>
 <div class="cell " data-row="4" data-col="48"></div>
 <div class="cell " data-row="4" data-col="49"></div>
-<div class="cell blue-zone" data-row="4" data-col="50"></div>
+<div class="cell blue-zone border-right" data-row="4" data-col="50"></div>
 <div class="label-left">5</div>
-<div class="cell pink-zone" data-row="5" data-col="0"></div>
+<div class="cell pink-zone border-left" data-row="5" data-col="0"></div>
 <div class="cell " data-row="5" data-col="1"></div>
 <div class="cell " data-row="5" data-col="2"></div>
 <div class="cell " data-row="5" data-col="3"></div>
@@ -359,9 +438,9 @@
 <div class="cell " data-row="5" data-col="47"></div>
 <div class="cell " data-row="5" data-col="48"></div>
 <div class="cell " data-row="5" data-col="49"></div>
-<div class="cell blue-zone" data-row="5" data-col="50"></div>
+<div class="cell blue-zone border-right" data-row="5" data-col="50"></div>
 <div class="label-left">6</div>
-<div class="cell pink-zone" data-row="6" data-col="0"></div>
+<div class="cell pink-zone border-left" data-row="6" data-col="0"></div>
 <div class="cell " data-row="6" data-col="1"></div>
 <div class="cell " data-row="6" data-col="2"></div>
 <div class="cell " data-row="6" data-col="3"></div>
@@ -411,9 +490,9 @@
 <div class="cell " data-row="6" data-col="47"></div>
 <div class="cell " data-row="6" data-col="48"></div>
 <div class="cell " data-row="6" data-col="49"></div>
-<div class="cell blue-zone" data-row="6" data-col="50"></div>
+<div class="cell blue-zone border-right" data-row="6" data-col="50"></div>
 <div class="label-left">7</div>
-<div class="cell pink-zone" data-row="7" data-col="0"></div>
+<div class="cell pink-zone border-left" data-row="7" data-col="0"></div>
 <div class="cell " data-row="7" data-col="1"></div>
 <div class="cell " data-row="7" data-col="2"></div>
 <div class="cell " data-row="7" data-col="3"></div>
@@ -463,9 +542,9 @@
 <div class="cell " data-row="7" data-col="47"></div>
 <div class="cell " data-row="7" data-col="48"></div>
 <div class="cell " data-row="7" data-col="49"></div>
-<div class="cell blue-zone" data-row="7" data-col="50"></div>
+<div class="cell blue-zone border-right" data-row="7" data-col="50"></div>
 <div class="label-left">8</div>
-<div class="cell pink-zone" data-row="8" data-col="0"></div>
+<div class="cell pink-zone border-left" data-row="8" data-col="0"></div>
 <div class="cell " data-row="8" data-col="1"></div>
 <div class="cell " data-row="8" data-col="2"></div>
 <div class="cell " data-row="8" data-col="3"></div>
@@ -515,9 +594,9 @@
 <div class="cell " data-row="8" data-col="47"></div>
 <div class="cell " data-row="8" data-col="48"></div>
 <div class="cell " data-row="8" data-col="49"></div>
-<div class="cell blue-zone" data-row="8" data-col="50"></div>
+<div class="cell blue-zone border-right" data-row="8" data-col="50"></div>
 <div class="label-left">9</div>
-<div class="cell pink-zone" data-row="9" data-col="0"></div>
+<div class="cell pink-zone border-left" data-row="9" data-col="0"></div>
 <div class="cell " data-row="9" data-col="1"></div>
 <div class="cell " data-row="9" data-col="2"></div>
 <div class="cell " data-row="9" data-col="3"></div>
@@ -567,9 +646,9 @@
 <div class="cell " data-row="9" data-col="47"></div>
 <div class="cell " data-row="9" data-col="48"></div>
 <div class="cell " data-row="9" data-col="49"></div>
-<div class="cell blue-zone" data-row="9" data-col="50"></div>
+<div class="cell blue-zone border-right" data-row="9" data-col="50"></div>
 <div class="label-left">10</div>
-<div class="cell pink-zone" data-row="10" data-col="0"></div>
+<div class="cell pink-zone border-left" data-row="10" data-col="0"></div>
 <div class="cell " data-row="10" data-col="1"></div>
 <div class="cell " data-row="10" data-col="2"></div>
 <div class="cell " data-row="10" data-col="3"></div>
@@ -619,9 +698,9 @@
 <div class="cell " data-row="10" data-col="47"></div>
 <div class="cell " data-row="10" data-col="48"></div>
 <div class="cell " data-row="10" data-col="49"></div>
-<div class="cell blue-zone" data-row="10" data-col="50"></div>
+<div class="cell blue-zone border-right" data-row="10" data-col="50"></div>
 <div class="label-left">11</div>
-<div class="cell pink-zone" data-row="11" data-col="0"></div>
+<div class="cell pink-zone border-left" data-row="11" data-col="0"></div>
 <div class="cell " data-row="11" data-col="1"></div>
 <div class="cell " data-row="11" data-col="2"></div>
 <div class="cell " data-row="11" data-col="3"></div>
@@ -671,9 +750,9 @@
 <div class="cell " data-row="11" data-col="47"></div>
 <div class="cell " data-row="11" data-col="48"></div>
 <div class="cell " data-row="11" data-col="49"></div>
-<div class="cell blue-zone" data-row="11" data-col="50"></div>
+<div class="cell blue-zone border-right" data-row="11" data-col="50"></div>
 <div class="label-left">12</div>
-<div class="cell pink-zone" data-row="12" data-col="0"></div>
+<div class="cell pink-zone border-left" data-row="12" data-col="0"></div>
 <div class="cell " data-row="12" data-col="1"></div>
 <div class="cell " data-row="12" data-col="2"></div>
 <div class="cell " data-row="12" data-col="3"></div>
@@ -723,9 +802,9 @@
 <div class="cell " data-row="12" data-col="47"></div>
 <div class="cell " data-row="12" data-col="48"></div>
 <div class="cell " data-row="12" data-col="49"></div>
-<div class="cell blue-zone" data-row="12" data-col="50"></div>
+<div class="cell blue-zone border-right" data-row="12" data-col="50"></div>
 <div class="label-left">13</div>
-<div class="cell pink-zone" data-row="13" data-col="0"></div>
+<div class="cell pink-zone border-left" data-row="13" data-col="0"></div>
 <div class="cell " data-row="13" data-col="1"></div>
 <div class="cell " data-row="13" data-col="2"></div>
 <div class="cell " data-row="13" data-col="3"></div>
@@ -775,9 +854,9 @@
 <div class="cell " data-row="13" data-col="47"></div>
 <div class="cell " data-row="13" data-col="48"></div>
 <div class="cell " data-row="13" data-col="49"></div>
-<div class="cell blue-zone" data-row="13" data-col="50"></div>
+<div class="cell blue-zone border-right" data-row="13" data-col="50"></div>
 <div class="label-left">14</div>
-<div class="cell pink-zone" data-row="14" data-col="0"></div>
+<div class="cell pink-zone border-left" data-row="14" data-col="0"></div>
 <div class="cell " data-row="14" data-col="1"></div>
 <div class="cell " data-row="14" data-col="2"></div>
 <div class="cell " data-row="14" data-col="3"></div>
@@ -827,9 +906,9 @@
 <div class="cell " data-row="14" data-col="47"></div>
 <div class="cell " data-row="14" data-col="48"></div>
 <div class="cell " data-row="14" data-col="49"></div>
-<div class="cell blue-zone" data-row="14" data-col="50"></div>
+<div class="cell blue-zone border-right" data-row="14" data-col="50"></div>
 <div class="label-left">15</div>
-<div class="cell pink-zone" data-row="15" data-col="0"></div>
+<div class="cell pink-zone border-left" data-row="15" data-col="0"></div>
 <div class="cell " data-row="15" data-col="1"></div>
 <div class="cell " data-row="15" data-col="2"></div>
 <div class="cell " data-row="15" data-col="3"></div>
@@ -879,9 +958,9 @@
 <div class="cell " data-row="15" data-col="47"></div>
 <div class="cell " data-row="15" data-col="48"></div>
 <div class="cell " data-row="15" data-col="49"></div>
-<div class="cell blue-zone" data-row="15" data-col="50"></div>
+<div class="cell blue-zone border-right" data-row="15" data-col="50"></div>
 <div class="label-left">16</div>
-<div class="cell pink-zone" data-row="16" data-col="0"></div>
+<div class="cell pink-zone border-left" data-row="16" data-col="0"></div>
 <div class="cell " data-row="16" data-col="1"></div>
 <div class="cell " data-row="16" data-col="2"></div>
 <div class="cell " data-row="16" data-col="3"></div>
@@ -931,9 +1010,9 @@
 <div class="cell " data-row="16" data-col="47"></div>
 <div class="cell " data-row="16" data-col="48"></div>
 <div class="cell " data-row="16" data-col="49"></div>
-<div class="cell blue-zone" data-row="16" data-col="50"></div>
+<div class="cell blue-zone border-right" data-row="16" data-col="50"></div>
 <div class="label-left">17</div>
-<div class="cell pink-zone" data-row="17" data-col="0"></div>
+<div class="cell pink-zone border-left" data-row="17" data-col="0"></div>
 <div class="cell " data-row="17" data-col="1"></div>
 <div class="cell " data-row="17" data-col="2"></div>
 <div class="cell " data-row="17" data-col="3"></div>
@@ -983,9 +1062,9 @@
 <div class="cell " data-row="17" data-col="47"></div>
 <div class="cell " data-row="17" data-col="48"></div>
 <div class="cell " data-row="17" data-col="49"></div>
-<div class="cell blue-zone" data-row="17" data-col="50"></div>
+<div class="cell blue-zone border-right" data-row="17" data-col="50"></div>
 <div class="label-left">18</div>
-<div class="cell pink-zone" data-row="18" data-col="0"></div>
+<div class="cell pink-zone border-left" data-row="18" data-col="0"></div>
 <div class="cell " data-row="18" data-col="1"></div>
 <div class="cell " data-row="18" data-col="2"></div>
 <div class="cell " data-row="18" data-col="3"></div>
@@ -1035,61 +1114,16 @@
 <div class="cell " data-row="18" data-col="47"></div>
 <div class="cell " data-row="18" data-col="48"></div>
 <div class="cell " data-row="18" data-col="49"></div>
-<div class="cell blue-zone" data-row="18" data-col="50"></div>
+<div class="cell blue-zone border-right" data-row="18" data-col="50"></div>
 <div class="label-left">19</div>
-<div class="cell border-thick" data-row="19" data-col="0"></div>
-<div class="cell " data-row="19" data-col="1"></div>
-<div class="cell " data-row="19" data-col="2"></div>
-<div class="cell " data-row="19" data-col="3"></div>
-<div class="cell " data-row="19" data-col="4"></div>
-<div class="cell " data-row="19" data-col="5"></div>
-<div class="cell " data-row="19" data-col="6"></div>
-<div class="cell " data-row="19" data-col="7"></div>
-<div class="cell " data-row="19" data-col="8"></div>
-<div class="cell " data-row="19" data-col="9"></div>
-<div class="cell " data-row="19" data-col="10"></div>
-<div class="cell " data-row="19" data-col="11"></div>
-<div class="cell " data-row="19" data-col="12"></div>
-<div class="cell " data-row="19" data-col="13"></div>
-<div class="cell " data-row="19" data-col="14"></div>
-<div class="cell " data-row="19" data-col="15"></div>
-<div class="cell " data-row="19" data-col="16"></div>
-<div class="cell " data-row="19" data-col="17"></div>
-<div class="cell " data-row="19" data-col="18"></div>
-<div class="cell " data-row="19" data-col="19"></div>
-<div class="cell " data-row="19" data-col="20"></div>
-<div class="cell " data-row="19" data-col="21"></div>
-<div class="cell " data-row="19" data-col="22"></div>
-<div class="cell " data-row="19" data-col="23"></div>
-<div class="cell " data-row="19" data-col="24"></div>
-<div class="cell " data-row="19" data-col="25"></div>
-<div class="cell " data-row="19" data-col="26"></div>
-<div class="cell " data-row="19" data-col="27"></div>
-<div class="cell " data-row="19" data-col="28"></div>
-<div class="cell " data-row="19" data-col="29"></div>
-<div class="cell " data-row="19" data-col="30"></div>
-<div class="cell " data-row="19" data-col="31"></div>
-<div class="cell " data-row="19" data-col="32"></div>
-<div class="cell " data-row="19" data-col="33"></div>
-<div class="cell " data-row="19" data-col="34"></div>
-<div class="cell " data-row="19" data-col="35"></div>
-<div class="cell " data-row="19" data-col="36"></div>
-<div class="cell " data-row="19" data-col="37"></div>
-<div class="cell " data-row="19" data-col="38"></div>
-<div class="cell " data-row="19" data-col="39"></div>
-<div class="cell " data-row="19" data-col="40"></div>
-<div class="cell " data-row="19" data-col="41"></div>
-<div class="cell " data-row="19" data-col="42"></div>
-<div class="cell " data-row="19" data-col="43"></div>
-<div class="cell " data-row="19" data-col="44"></div>
-<div class="cell " data-row="19" data-col="45"></div>
-<div class="cell " data-row="19" data-col="46"></div>
-<div class="cell " data-row="19" data-col="47"></div>
-<div class="cell " data-row="19" data-col="48"></div>
-<div class="cell " data-row="19" data-col="49"></div>
-<div class="cell border-thick" data-row="19" data-col="50"></div>
+<div class="cell row-19" style="grid-column: 2 / 4;">#</div>
+<div class="cell row-19 border-vertical" style="grid-column: 4 / 24;">DEFENSIVE LINE CALL</div>
+<div class="cell row-19 border-vertical" style="grid-column: 24 / 41;">LINEBACKER</div>
+<div class="cell row-19 border-vertical nowrap-small" style="grid-column: 41 / 45;">HSH OFF</div>
+<div class="cell row-19 border-vertical nowrap-small" style="grid-column: 45 / 47;">DEF STR</div>
+<div class="cell row-19 border-vertical nowrap-small" style="grid-column: 47 / 53;">HSH DEF</div>
 <div class="label-left">20</div>
-<div class="cell border-thick" data-row="20" data-col="0"></div>
+<div class="cell border-left" data-row="20" data-col="0"></div>
 <div class="cell " data-row="20" data-col="1"></div>
 <div class="cell " data-row="20" data-col="2"></div>
 <div class="cell " data-row="20" data-col="3"></div>
@@ -1139,9 +1173,9 @@
 <div class="cell " data-row="20" data-col="47"></div>
 <div class="cell " data-row="20" data-col="48"></div>
 <div class="cell " data-row="20" data-col="49"></div>
-<div class="cell border-thick" data-row="20" data-col="50"></div>
+<div class="cell border-right" data-row="20" data-col="50"></div>
 <div class="label-left">21</div>
-<div class="cell border-thick" data-row="21" data-col="0"></div>
+<div class="cell border-left" data-row="21" data-col="0"></div>
 <div class="cell " data-row="21" data-col="1"></div>
 <div class="cell " data-row="21" data-col="2"></div>
 <div class="cell " data-row="21" data-col="3"></div>
@@ -1191,61 +1225,11 @@
 <div class="cell " data-row="21" data-col="47"></div>
 <div class="cell " data-row="21" data-col="48"></div>
 <div class="cell " data-row="21" data-col="49"></div>
-<div class="cell border-thick" data-row="21" data-col="50"></div>
+<div class="cell border-right" data-row="21" data-col="50"></div>
 <div class="label-left">22</div>
-<div class="cell black-row" data-row="22" data-col="0"></div>
-<div class="cell black-row" data-row="22" data-col="1"></div>
-<div class="cell black-row" data-row="22" data-col="2"></div>
-<div class="cell black-row" data-row="22" data-col="3"></div>
-<div class="cell black-row" data-row="22" data-col="4"></div>
-<div class="cell black-row" data-row="22" data-col="5"></div>
-<div class="cell black-row" data-row="22" data-col="6"></div>
-<div class="cell black-row" data-row="22" data-col="7"></div>
-<div class="cell black-row" data-row="22" data-col="8"></div>
-<div class="cell black-row" data-row="22" data-col="9"></div>
-<div class="cell black-row" data-row="22" data-col="10"></div>
-<div class="cell black-row" data-row="22" data-col="11"></div>
-<div class="cell black-row" data-row="22" data-col="12"></div>
-<div class="cell black-row" data-row="22" data-col="13"></div>
-<div class="cell black-row" data-row="22" data-col="14"></div>
-<div class="cell black-row" data-row="22" data-col="15"></div>
-<div class="cell black-row" data-row="22" data-col="16"></div>
-<div class="cell black-row" data-row="22" data-col="17"></div>
-<div class="cell black-row" data-row="22" data-col="18"></div>
-<div class="cell black-row" data-row="22" data-col="19"></div>
-<div class="cell black-row" data-row="22" data-col="20"></div>
-<div class="cell black-row" data-row="22" data-col="21"></div>
-<div class="cell black-row" data-row="22" data-col="22"></div>
-<div class="cell black-row" data-row="22" data-col="23"></div>
-<div class="cell black-row" data-row="22" data-col="24"></div>
-<div class="cell black-row" data-row="22" data-col="25"></div>
-<div class="cell black-row" data-row="22" data-col="26"></div>
-<div class="cell black-row" data-row="22" data-col="27"></div>
-<div class="cell black-row" data-row="22" data-col="28"></div>
-<div class="cell black-row" data-row="22" data-col="29"></div>
-<div class="cell black-row" data-row="22" data-col="30"></div>
-<div class="cell black-row" data-row="22" data-col="31"></div>
-<div class="cell black-row" data-row="22" data-col="32"></div>
-<div class="cell black-row" data-row="22" data-col="33"></div>
-<div class="cell black-row" data-row="22" data-col="34"></div>
-<div class="cell black-row" data-row="22" data-col="35"></div>
-<div class="cell black-row" data-row="22" data-col="36"></div>
-<div class="cell black-row" data-row="22" data-col="37"></div>
-<div class="cell black-row" data-row="22" data-col="38"></div>
-<div class="cell black-row" data-row="22" data-col="39"></div>
-<div class="cell black-row" data-row="22" data-col="40"></div>
-<div class="cell black-row" data-row="22" data-col="41"></div>
-<div class="cell black-row" data-row="22" data-col="42"></div>
-<div class="cell black-row" data-row="22" data-col="43"></div>
-<div class="cell black-row" data-row="22" data-col="44"></div>
-<div class="cell black-row" data-row="22" data-col="45"></div>
-<div class="cell black-row" data-row="22" data-col="46"></div>
-<div class="cell black-row" data-row="22" data-col="47"></div>
-<div class="cell black-row" data-row="22" data-col="48"></div>
-<div class="cell black-row" data-row="22" data-col="49"></div>
-<div class="cell black-row" data-row="22" data-col="50"></div>
+<div class="cell row-22" style="grid-column: 2 / 53;"></div>
 <div class="label-left">23</div>
-<div class="cell blue-zone" data-row="23" data-col="0"></div>
+<div class="cell blue-zone border-left" data-row="23" data-col="0"></div>
 <div class="cell " data-row="23" data-col="1"></div>
 <div class="cell " data-row="23" data-col="2"></div>
 <div class="cell " data-row="23" data-col="3"></div>
@@ -1295,9 +1279,9 @@
 <div class="cell " data-row="23" data-col="47"></div>
 <div class="cell " data-row="23" data-col="48"></div>
 <div class="cell " data-row="23" data-col="49"></div>
-<div class="cell pink-zone" data-row="23" data-col="50"></div>
+<div class="cell pink-zone border-right" data-row="23" data-col="50"></div>
 <div class="label-left">24</div>
-<div class="cell blue-zone" data-row="24" data-col="0"></div>
+<div class="cell blue-zone border-left" data-row="24" data-col="0"></div>
 <div class="cell " data-row="24" data-col="1"></div>
 <div class="cell " data-row="24" data-col="2"></div>
 <div class="cell " data-row="24" data-col="3"></div>
@@ -1347,9 +1331,9 @@
 <div class="cell " data-row="24" data-col="47"></div>
 <div class="cell " data-row="24" data-col="48"></div>
 <div class="cell " data-row="24" data-col="49"></div>
-<div class="cell pink-zone" data-row="24" data-col="50"></div>
+<div class="cell pink-zone border-right" data-row="24" data-col="50"></div>
 <div class="label-left">25</div>
-<div class="cell blue-zone" data-row="25" data-col="0"></div>
+<div class="cell blue-zone border-left" data-row="25" data-col="0"></div>
 <div class="cell " data-row="25" data-col="1"></div>
 <div class="cell " data-row="25" data-col="2"></div>
 <div class="cell " data-row="25" data-col="3"></div>
@@ -1399,9 +1383,9 @@
 <div class="cell " data-row="25" data-col="47"></div>
 <div class="cell " data-row="25" data-col="48"></div>
 <div class="cell " data-row="25" data-col="49"></div>
-<div class="cell pink-zone" data-row="25" data-col="50"></div>
+<div class="cell pink-zone border-right" data-row="25" data-col="50"></div>
 <div class="label-left">26</div>
-<div class="cell blue-zone" data-row="26" data-col="0"></div>
+<div class="cell blue-zone border-left" data-row="26" data-col="0"></div>
 <div class="cell " data-row="26" data-col="1"></div>
 <div class="cell " data-row="26" data-col="2"></div>
 <div class="cell " data-row="26" data-col="3"></div>
@@ -1451,9 +1435,9 @@
 <div class="cell " data-row="26" data-col="47"></div>
 <div class="cell " data-row="26" data-col="48"></div>
 <div class="cell " data-row="26" data-col="49"></div>
-<div class="cell pink-zone" data-row="26" data-col="50"></div>
+<div class="cell pink-zone border-right" data-row="26" data-col="50"></div>
 <div class="label-left">27</div>
-<div class="cell blue-zone" data-row="27" data-col="0"></div>
+<div class="cell blue-zone border-left" data-row="27" data-col="0"></div>
 <div class="cell " data-row="27" data-col="1"></div>
 <div class="cell " data-row="27" data-col="2"></div>
 <div class="cell " data-row="27" data-col="3"></div>
@@ -1503,9 +1487,9 @@
 <div class="cell " data-row="27" data-col="47"></div>
 <div class="cell " data-row="27" data-col="48"></div>
 <div class="cell " data-row="27" data-col="49"></div>
-<div class="cell pink-zone" data-row="27" data-col="50"></div>
+<div class="cell pink-zone border-right" data-row="27" data-col="50"></div>
 <div class="label-left">28</div>
-<div class="cell blue-zone" data-row="28" data-col="0"></div>
+<div class="cell blue-zone border-left" data-row="28" data-col="0"></div>
 <div class="cell " data-row="28" data-col="1"></div>
 <div class="cell " data-row="28" data-col="2"></div>
 <div class="cell " data-row="28" data-col="3"></div>
@@ -1555,9 +1539,9 @@
 <div class="cell " data-row="28" data-col="47"></div>
 <div class="cell " data-row="28" data-col="48"></div>
 <div class="cell " data-row="28" data-col="49"></div>
-<div class="cell pink-zone" data-row="28" data-col="50"></div>
+<div class="cell pink-zone border-right" data-row="28" data-col="50"></div>
 <div class="label-left">29</div>
-<div class="cell blue-zone" data-row="29" data-col="0"></div>
+<div class="cell blue-zone border-left" data-row="29" data-col="0"></div>
 <div class="cell " data-row="29" data-col="1"></div>
 <div class="cell " data-row="29" data-col="2"></div>
 <div class="cell " data-row="29" data-col="3"></div>
@@ -1607,9 +1591,9 @@
 <div class="cell " data-row="29" data-col="47"></div>
 <div class="cell " data-row="29" data-col="48"></div>
 <div class="cell " data-row="29" data-col="49"></div>
-<div class="cell pink-zone" data-row="29" data-col="50"></div>
+<div class="cell pink-zone border-right" data-row="29" data-col="50"></div>
 <div class="label-left">30</div>
-<div class="cell blue-zone" data-row="30" data-col="0"></div>
+<div class="cell blue-zone border-left" data-row="30" data-col="0"></div>
 <div class="cell " data-row="30" data-col="1"></div>
 <div class="cell " data-row="30" data-col="2"></div>
 <div class="cell " data-row="30" data-col="3"></div>
@@ -1659,9 +1643,9 @@
 <div class="cell " data-row="30" data-col="47"></div>
 <div class="cell " data-row="30" data-col="48"></div>
 <div class="cell " data-row="30" data-col="49"></div>
-<div class="cell pink-zone" data-row="30" data-col="50"></div>
+<div class="cell pink-zone border-right" data-row="30" data-col="50"></div>
 <div class="label-left">31</div>
-<div class="cell blue-zone" data-row="31" data-col="0"></div>
+<div class="cell blue-zone border-left" data-row="31" data-col="0"></div>
 <div class="cell " data-row="31" data-col="1"></div>
 <div class="cell " data-row="31" data-col="2"></div>
 <div class="cell " data-row="31" data-col="3"></div>
@@ -1711,9 +1695,9 @@
 <div class="cell " data-row="31" data-col="47"></div>
 <div class="cell " data-row="31" data-col="48"></div>
 <div class="cell " data-row="31" data-col="49"></div>
-<div class="cell pink-zone" data-row="31" data-col="50"></div>
+<div class="cell pink-zone border-right" data-row="31" data-col="50"></div>
 <div class="label-left">32</div>
-<div class="cell blue-zone" data-row="32" data-col="0"></div>
+<div class="cell blue-zone border-left" data-row="32" data-col="0"></div>
 <div class="cell " data-row="32" data-col="1"></div>
 <div class="cell " data-row="32" data-col="2"></div>
 <div class="cell " data-row="32" data-col="3"></div>
@@ -1763,9 +1747,9 @@
 <div class="cell " data-row="32" data-col="47"></div>
 <div class="cell " data-row="32" data-col="48"></div>
 <div class="cell " data-row="32" data-col="49"></div>
-<div class="cell pink-zone" data-row="32" data-col="50"></div>
+<div class="cell pink-zone border-right" data-row="32" data-col="50"></div>
 <div class="label-left">33</div>
-<div class="cell blue-zone" data-row="33" data-col="0"></div>
+<div class="cell blue-zone border-left" data-row="33" data-col="0"></div>
 <div class="cell " data-row="33" data-col="1"></div>
 <div class="cell " data-row="33" data-col="2"></div>
 <div class="cell " data-row="33" data-col="3"></div>
@@ -1815,9 +1799,9 @@
 <div class="cell " data-row="33" data-col="47"></div>
 <div class="cell " data-row="33" data-col="48"></div>
 <div class="cell " data-row="33" data-col="49"></div>
-<div class="cell pink-zone" data-row="33" data-col="50"></div>
+<div class="cell pink-zone border-right" data-row="33" data-col="50"></div>
 <div class="label-left">34</div>
-<div class="cell blue-zone" data-row="34" data-col="0"></div>
+<div class="cell blue-zone border-left" data-row="34" data-col="0"></div>
 <div class="cell " data-row="34" data-col="1"></div>
 <div class="cell " data-row="34" data-col="2"></div>
 <div class="cell " data-row="34" data-col="3"></div>
@@ -1867,9 +1851,9 @@
 <div class="cell " data-row="34" data-col="47"></div>
 <div class="cell " data-row="34" data-col="48"></div>
 <div class="cell " data-row="34" data-col="49"></div>
-<div class="cell pink-zone" data-row="34" data-col="50"></div>
+<div class="cell pink-zone border-right" data-row="34" data-col="50"></div>
 <div class="label-left">35</div>
-<div class="cell blue-zone" data-row="35" data-col="0"></div>
+<div class="cell blue-zone border-left" data-row="35" data-col="0"></div>
 <div class="cell " data-row="35" data-col="1"></div>
 <div class="cell " data-row="35" data-col="2"></div>
 <div class="cell " data-row="35" data-col="3"></div>
@@ -1919,9 +1903,9 @@
 <div class="cell " data-row="35" data-col="47"></div>
 <div class="cell " data-row="35" data-col="48"></div>
 <div class="cell " data-row="35" data-col="49"></div>
-<div class="cell pink-zone" data-row="35" data-col="50"></div>
+<div class="cell pink-zone border-right" data-row="35" data-col="50"></div>
 <div class="label-left">36</div>
-<div class="cell blue-zone" data-row="36" data-col="0"></div>
+<div class="cell blue-zone border-left" data-row="36" data-col="0"></div>
 <div class="cell " data-row="36" data-col="1"></div>
 <div class="cell " data-row="36" data-col="2"></div>
 <div class="cell " data-row="36" data-col="3"></div>
@@ -1971,9 +1955,9 @@
 <div class="cell " data-row="36" data-col="47"></div>
 <div class="cell " data-row="36" data-col="48"></div>
 <div class="cell " data-row="36" data-col="49"></div>
-<div class="cell pink-zone" data-row="36" data-col="50"></div>
+<div class="cell pink-zone border-right" data-row="36" data-col="50"></div>
 <div class="label-left">37</div>
-<div class="cell blue-zone" data-row="37" data-col="0"></div>
+<div class="cell blue-zone border-left" data-row="37" data-col="0"></div>
 <div class="cell " data-row="37" data-col="1"></div>
 <div class="cell " data-row="37" data-col="2"></div>
 <div class="cell " data-row="37" data-col="3"></div>
@@ -2023,9 +2007,9 @@
 <div class="cell " data-row="37" data-col="47"></div>
 <div class="cell " data-row="37" data-col="48"></div>
 <div class="cell " data-row="37" data-col="49"></div>
-<div class="cell pink-zone" data-row="37" data-col="50"></div>
+<div class="cell pink-zone border-right" data-row="37" data-col="50"></div>
 <div class="label-left">38</div>
-<div class="cell blue-zone" data-row="38" data-col="0"></div>
+<div class="cell blue-zone border-left" data-row="38" data-col="0"></div>
 <div class="cell " data-row="38" data-col="1"></div>
 <div class="cell " data-row="38" data-col="2"></div>
 <div class="cell " data-row="38" data-col="3"></div>
@@ -2075,9 +2059,9 @@
 <div class="cell " data-row="38" data-col="47"></div>
 <div class="cell " data-row="38" data-col="48"></div>
 <div class="cell " data-row="38" data-col="49"></div>
-<div class="cell pink-zone" data-row="38" data-col="50"></div>
+<div class="cell pink-zone border-right" data-row="38" data-col="50"></div>
 <div class="label-left">39</div>
-<div class="cell blue-zone" data-row="39" data-col="0"></div>
+<div class="cell blue-zone border-left" data-row="39" data-col="0"></div>
 <div class="cell " data-row="39" data-col="1"></div>
 <div class="cell " data-row="39" data-col="2"></div>
 <div class="cell " data-row="39" data-col="3"></div>
@@ -2127,9 +2111,9 @@
 <div class="cell " data-row="39" data-col="47"></div>
 <div class="cell " data-row="39" data-col="48"></div>
 <div class="cell " data-row="39" data-col="49"></div>
-<div class="cell pink-zone" data-row="39" data-col="50"></div>
+<div class="cell pink-zone border-right" data-row="39" data-col="50"></div>
 <div class="label-left">40</div>
-<div class="cell blue-zone" data-row="40" data-col="0"></div>
+<div class="cell blue-zone border-left" data-row="40" data-col="0"></div>
 <div class="cell " data-row="40" data-col="1"></div>
 <div class="cell " data-row="40" data-col="2"></div>
 <div class="cell " data-row="40" data-col="3"></div>
@@ -2179,61 +2163,16 @@
 <div class="cell " data-row="40" data-col="47"></div>
 <div class="cell " data-row="40" data-col="48"></div>
 <div class="cell " data-row="40" data-col="49"></div>
-<div class="cell pink-zone" data-row="40" data-col="50"></div>
+<div class="cell pink-zone border-right" data-row="40" data-col="50"></div>
 <div class="label-left">41</div>
-<div class="cell border-thick" data-row="41" data-col="0"></div>
-<div class="cell " data-row="41" data-col="1"></div>
-<div class="cell " data-row="41" data-col="2"></div>
-<div class="cell " data-row="41" data-col="3"></div>
-<div class="cell " data-row="41" data-col="4"></div>
-<div class="cell " data-row="41" data-col="5"></div>
-<div class="cell " data-row="41" data-col="6"></div>
-<div class="cell " data-row="41" data-col="7"></div>
-<div class="cell " data-row="41" data-col="8"></div>
-<div class="cell " data-row="41" data-col="9"></div>
-<div class="cell " data-row="41" data-col="10"></div>
-<div class="cell " data-row="41" data-col="11"></div>
-<div class="cell " data-row="41" data-col="12"></div>
-<div class="cell " data-row="41" data-col="13"></div>
-<div class="cell " data-row="41" data-col="14"></div>
-<div class="cell " data-row="41" data-col="15"></div>
-<div class="cell " data-row="41" data-col="16"></div>
-<div class="cell " data-row="41" data-col="17"></div>
-<div class="cell " data-row="41" data-col="18"></div>
-<div class="cell " data-row="41" data-col="19"></div>
-<div class="cell " data-row="41" data-col="20"></div>
-<div class="cell " data-row="41" data-col="21"></div>
-<div class="cell " data-row="41" data-col="22"></div>
-<div class="cell " data-row="41" data-col="23"></div>
-<div class="cell " data-row="41" data-col="24"></div>
-<div class="cell " data-row="41" data-col="25"></div>
-<div class="cell " data-row="41" data-col="26"></div>
-<div class="cell " data-row="41" data-col="27"></div>
-<div class="cell " data-row="41" data-col="28"></div>
-<div class="cell " data-row="41" data-col="29"></div>
-<div class="cell " data-row="41" data-col="30"></div>
-<div class="cell " data-row="41" data-col="31"></div>
-<div class="cell " data-row="41" data-col="32"></div>
-<div class="cell " data-row="41" data-col="33"></div>
-<div class="cell " data-row="41" data-col="34"></div>
-<div class="cell " data-row="41" data-col="35"></div>
-<div class="cell " data-row="41" data-col="36"></div>
-<div class="cell " data-row="41" data-col="37"></div>
-<div class="cell " data-row="41" data-col="38"></div>
-<div class="cell " data-row="41" data-col="39"></div>
-<div class="cell " data-row="41" data-col="40"></div>
-<div class="cell " data-row="41" data-col="41"></div>
-<div class="cell " data-row="41" data-col="42"></div>
-<div class="cell " data-row="41" data-col="43"></div>
-<div class="cell " data-row="41" data-col="44"></div>
-<div class="cell " data-row="41" data-col="45"></div>
-<div class="cell " data-row="41" data-col="46"></div>
-<div class="cell " data-row="41" data-col="47"></div>
-<div class="cell " data-row="41" data-col="48"></div>
-<div class="cell " data-row="41" data-col="49"></div>
-<div class="cell border-thick" data-row="41" data-col="50"></div>
+<div class="cell row-41" style="grid-column: 2 / 4;">#</div>
+<div class="cell row-41 border-vertical" style="grid-column: 4 / 24;">DEFENSIVE LINE CALL</div>
+<div class="cell row-41 border-vertical" style="grid-column: 24 / 41;">LINEBACKER</div>
+<div class="cell row-41 border-vertical nowrap-small" style="grid-column: 41 / 45;">HSH OFF</div>
+<div class="cell row-41 border-vertical nowrap-small" style="grid-column: 45 / 47;">DEF STR</div>
+<div class="cell row-41 border-vertical nowrap-small" style="grid-column: 47 / 53;">HSH DEF</div>
 <div class="label-left">42</div>
-<div class="cell border-thick" data-row="42" data-col="0"></div>
+<div class="cell border-left" data-row="42" data-col="0"></div>
 <div class="cell " data-row="42" data-col="1"></div>
 <div class="cell " data-row="42" data-col="2"></div>
 <div class="cell " data-row="42" data-col="3"></div>
@@ -2283,60 +2222,62 @@
 <div class="cell " data-row="42" data-col="47"></div>
 <div class="cell " data-row="42" data-col="48"></div>
 <div class="cell " data-row="42" data-col="49"></div>
-<div class="cell border-thick" data-row="42" data-col="50"></div>
+<div class="cell border-right" data-row="42" data-col="50"></div>
 <div class="label-left">43</div>
-<div class="cell border-thick" data-row="43" data-col="0"></div>
-<div class="cell border-thick" data-row="43" data-col="1"></div>
-<div class="cell border-thick" data-row="43" data-col="2"></div>
-<div class="cell border-thick" data-row="43" data-col="3"></div>
-<div class="cell border-thick" data-row="43" data-col="4"></div>
-<div class="cell border-thick" data-row="43" data-col="5"></div>
-<div class="cell border-thick" data-row="43" data-col="6"></div>
-<div class="cell border-thick" data-row="43" data-col="7"></div>
-<div class="cell border-thick" data-row="43" data-col="8"></div>
-<div class="cell border-thick" data-row="43" data-col="9"></div>
-<div class="cell border-thick" data-row="43" data-col="10"></div>
-<div class="cell border-thick" data-row="43" data-col="11"></div>
-<div class="cell border-thick" data-row="43" data-col="12"></div>
-<div class="cell border-thick" data-row="43" data-col="13"></div>
-<div class="cell border-thick" data-row="43" data-col="14"></div>
-<div class="cell border-thick" data-row="43" data-col="15"></div>
-<div class="cell border-thick" data-row="43" data-col="16"></div>
-<div class="cell border-thick" data-row="43" data-col="17"></div>
-<div class="cell border-thick" data-row="43" data-col="18"></div>
-<div class="cell border-thick" data-row="43" data-col="19"></div>
-<div class="cell border-thick" data-row="43" data-col="20"></div>
-<div class="cell border-thick" data-row="43" data-col="21"></div>
-<div class="cell border-thick" data-row="43" data-col="22"></div>
-<div class="cell border-thick" data-row="43" data-col="23"></div>
-<div class="cell border-thick" data-row="43" data-col="24"></div>
-<div class="cell border-thick" data-row="43" data-col="25"></div>
-<div class="cell border-thick" data-row="43" data-col="26"></div>
-<div class="cell border-thick" data-row="43" data-col="27"></div>
-<div class="cell border-thick" data-row="43" data-col="28"></div>
-<div class="cell border-thick" data-row="43" data-col="29"></div>
-<div class="cell border-thick" data-row="43" data-col="30"></div>
-<div class="cell border-thick" data-row="43" data-col="31"></div>
-<div class="cell border-thick" data-row="43" data-col="32"></div>
-<div class="cell border-thick" data-row="43" data-col="33"></div>
-<div class="cell border-thick" data-row="43" data-col="34"></div>
-<div class="cell border-thick" data-row="43" data-col="35"></div>
-<div class="cell border-thick" data-row="43" data-col="36"></div>
-<div class="cell border-thick" data-row="43" data-col="37"></div>
-<div class="cell border-thick" data-row="43" data-col="38"></div>
-<div class="cell border-thick" data-row="43" data-col="39"></div>
-<div class="cell border-thick" data-row="43" data-col="40"></div>
-<div class="cell border-thick" data-row="43" data-col="41"></div>
-<div class="cell border-thick" data-row="43" data-col="42"></div>
-<div class="cell border-thick" data-row="43" data-col="43"></div>
-<div class="cell border-thick" data-row="43" data-col="44"></div>
-<div class="cell border-thick" data-row="43" data-col="45"></div>
-<div class="cell border-thick" data-row="43" data-col="46"></div>
-<div class="cell border-thick" data-row="43" data-col="47"></div>
-<div class="cell border-thick" data-row="43" data-col="48"></div>
-<div class="cell border-thick" data-row="43" data-col="49"></div>
-<div class="cell border-thick" data-row="43" data-col="50"></div>
+<div class="cell border-bottom border-left" data-row="43" data-col="0"></div>
+<div class="cell border-bottom" data-row="43" data-col="1"></div>
+<div class="cell border-bottom" data-row="43" data-col="2"></div>
+<div class="cell border-bottom" data-row="43" data-col="3"></div>
+<div class="cell border-bottom" data-row="43" data-col="4"></div>
+<div class="cell border-bottom" data-row="43" data-col="5"></div>
+<div class="cell border-bottom" data-row="43" data-col="6"></div>
+<div class="cell border-bottom" data-row="43" data-col="7"></div>
+<div class="cell border-bottom" data-row="43" data-col="8"></div>
+<div class="cell border-bottom" data-row="43" data-col="9"></div>
+<div class="cell border-bottom" data-row="43" data-col="10"></div>
+<div class="cell border-bottom" data-row="43" data-col="11"></div>
+<div class="cell border-bottom" data-row="43" data-col="12"></div>
+<div class="cell border-bottom" data-row="43" data-col="13"></div>
+<div class="cell border-bottom" data-row="43" data-col="14"></div>
+<div class="cell border-bottom" data-row="43" data-col="15"></div>
+<div class="cell border-bottom" data-row="43" data-col="16"></div>
+<div class="cell border-bottom" data-row="43" data-col="17"></div>
+<div class="cell border-bottom" data-row="43" data-col="18"></div>
+<div class="cell border-bottom" data-row="43" data-col="19"></div>
+<div class="cell border-bottom" data-row="43" data-col="20"></div>
+<div class="cell border-bottom" data-row="43" data-col="21"></div>
+<div class="cell border-bottom" data-row="43" data-col="22"></div>
+<div class="cell border-bottom" data-row="43" data-col="23"></div>
+<div class="cell border-bottom" data-row="43" data-col="24"></div>
+<div class="cell border-bottom" data-row="43" data-col="25"></div>
+<div class="cell border-bottom" data-row="43" data-col="26"></div>
+<div class="cell border-bottom" data-row="43" data-col="27"></div>
+<div class="cell border-bottom" data-row="43" data-col="28"></div>
+<div class="cell border-bottom" data-row="43" data-col="29"></div>
+<div class="cell border-bottom" data-row="43" data-col="30"></div>
+<div class="cell border-bottom" data-row="43" data-col="31"></div>
+<div class="cell border-bottom" data-row="43" data-col="32"></div>
+<div class="cell border-bottom" data-row="43" data-col="33"></div>
+<div class="cell border-bottom" data-row="43" data-col="34"></div>
+<div class="cell border-bottom" data-row="43" data-col="35"></div>
+<div class="cell border-bottom" data-row="43" data-col="36"></div>
+<div class="cell border-bottom" data-row="43" data-col="37"></div>
+<div class="cell border-bottom" data-row="43" data-col="38"></div>
+<div class="cell border-bottom" data-row="43" data-col="39"></div>
+<div class="cell border-bottom" data-row="43" data-col="40"></div>
+<div class="cell border-bottom" data-row="43" data-col="41"></div>
+<div class="cell border-bottom" data-row="43" data-col="42"></div>
+<div class="cell border-bottom" data-row="43" data-col="43"></div>
+<div class="cell border-bottom" data-row="43" data-col="44"></div>
+<div class="cell border-bottom" data-row="43" data-col="45"></div>
+<div class="cell border-bottom" data-row="43" data-col="46"></div>
+<div class="cell border-bottom" data-row="43" data-col="47"></div>
+<div class="cell border-bottom" data-row="43" data-col="48"></div>
+<div class="cell border-bottom" data-row="43" data-col="49"></div>
+<div class="cell border-bottom border-right" data-row="43" data-col="50"></div>
 <div id="controls">
+    <button onclick="runSTK33_LOUIE()">Run STK33_LOUIE</button>
+    <button onclick="runSTK33_ROGER()">Run STK33_ROGER</button>
     <button onclick="runSTK33_LOUIE()">Run STK33_LOUIE</button>
     <button onclick="clearGrid()">Clear</button>
   </div>
@@ -2373,6 +2314,45 @@
     }
     function clearGrid() {
       document.querySelectorAll('.cell').forEach(cell => cell.innerHTML = '');
+    }
+  
+    function runSTK33_LOUIE() {
+  insertShape(6, 25, "C", "rgb(255, 0, 0)", "rgb(255, 255, 255)");
+  insertShape(6, 21, "LT", "rgb(255, 255, 255)", "rgb(0, 0, 0)");
+  insertShape(6, 23, "LG", "rgb(255, 255, 255)", "rgb(0, 0, 0)");
+  insertShape(6, 27, "RG", "rgb(255, 255, 255)", "rgb(0, 0, 0)");
+  insertShape(6, 29, "RT", "rgb(255, 255, 255)", "rgb(0, 0, 0)");
+  insertShape(9, 5, "LC", "black", "white");
+  insertShape(9, 45, "RC", "black", "white");
+  insertShape(9, 29, "TK", "black", "white");
+  insertShape(9, 25, "NT", "black", "white");
+  insertShape(9, 21, "DE", "black", "white");
+  insertShape(12, 29, "WL", "black", "white");
+  insertShape(12, 25, "MK", "black", "white");
+  insertShape(12, 21, "SA", "black", "white");
+  insertShape(12, 39, "RS", "black", "white");
+  insertShape(16, 25, "FS", "black", "white");
+  insertShape(12, 11, "SS", "black", "white");
+
+    }
+    function runSTK33_ROGER() {
+  insertShape(26, 25, "C", "rgb(255, 0, 0)", "rgb(255, 255, 255)");
+  insertShape(26, 21, "LT", "rgb(255, 255, 255)", "rgb(0, 0, 0)");
+  insertShape(26, 23, "LG", "rgb(255, 255, 255)", "rgb(0, 0, 0)");
+  insertShape(26, 27, "RG", "rgb(255, 255, 255)", "rgb(0, 0, 0)");
+  insertShape(26, 29, "RT", "rgb(255, 255, 255)", "rgb(0, 0, 0)");
+  insertShape(29, 5, "LC", "black", "white");
+  insertShape(29, 45, "RC", "black", "white");
+  insertShape(29, 29, "TK", "black", "white");
+  insertShape(29, 25, "NT", "black", "white");
+  insertShape(29, 21, "DE", "black", "white");
+  insertShape(32, 29, "WL", "black", "white");
+  insertShape(32, 25, "MK", "black", "white");
+  insertShape(32, 21, "SA", "black", "white");
+  insertShape(32, 39, "RS", "black", "white");
+  insertShape(36, 25, "FS", "black", "white");
+  insertShape(32, 11, "SS", "black", "white");
+
     }
   </script>
 </body>
