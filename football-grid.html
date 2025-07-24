@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Football Grid</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    #grid {
+      display: grid;
+      grid-template-columns: repeat(50, 20px);
+      grid-template-rows: repeat(30, 14px);
+      gap: 1px;
+      background-color: #333;
+    }
+    .cell {
+      width: 20px;
+      height: 14px;
+      background-color: #e0e0e0;
+      border: 1px solid #ccc;
+      position: relative;
+    }
+    .player {
+      width: 14px;
+      height: 14px;
+      background-color: red;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      left: 3px;
+    }
+    .arrow {
+      width: 0;
+      height: 0;
+      border-top: 7px solid transparent;
+      border-bottom: 7px solid transparent;
+      border-left: 10px solid blue;
+      position: absolute;
+      top: 0;
+      left: 5px;
+    }
+    #controls {
+      margin-top: 20px;
+    }
+    button {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Football Grid</h2>
+  <div id="grid"></div>
+  <div id="controls">
+    <button onclick="setMode('player')">Insert Player</button>
+    <button onclick="setMode('arrow')">Insert Arrow</button>
+    <button onclick="clearGrid()">Clear</button>
+  </div>
+
+  <script>
+    const grid = document.getElementById('grid');
+    let mode = 'player';
+
+    function setMode(newMode) {
+      mode = newMode;
+    }
+
+    function clearGrid() {
+      document.querySelectorAll('.player, .arrow').forEach(el => el.remove());
+    }
+
+    function createGrid(rows, cols) {
+      for (let r = 0; r < rows; r++) {
+        for (let c = 0; c < cols; c++) {
+          const cell = document.createElement('div');
+          cell.className = 'cell';
+          cell.addEventListener('click', () => handleCellClick(cell));
+          grid.appendChild(cell);
+        }
+      }
+    }
+
+    function handleCellClick(cell) {
+      if (mode === 'player') {
+        const el = document.createElement('div');
+        el.className = 'player';
+        cell.appendChild(el);
+      } else if (mode === 'arrow') {
+        const el = document.createElement('div');
+        el.className = 'arrow';
+        cell.appendChild(el);
+      }
+    }
+
+    createGrid(30, 50);
+  </script>
+</body>
+</html>
