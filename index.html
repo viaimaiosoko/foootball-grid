@@ -11,7 +11,23 @@
     .label-top { text-align: center; font-weight: bold; font-size: 12px; }
     .label-left { text-align: right; font-weight: bold; padding-right: 4px; font-size: 12px; }
     .cell { width: 20px; height: 14px; background-color: #e0e0e0; border: 1px solid #ccc; position: relative; }
-    .shape { width: 100%; height: 100%; font-size: 9px; font-family: 'Arial Narrow'; font-weight: bold; color: white; display: flex; align-items: center; justify-content: center; }
+    .shape {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 10px;
+      font-family: 'Arial Narrow', Arial, sans-serif;
+      font-weight: bold;
+      color: white;
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      text-align: center;
+      line-height: 1;
+      border-radius: 4px;
+ width: 100%; height: 100%; font-size: 9px; font-family: 'Arial Narrow'; font-weight: bold; color: white; display: flex; align-items: center; justify-content: center; }
     #controls { margin-top: 20px; }
     button { margin-right: 10px; }
   </style>
@@ -2311,7 +2327,6 @@
   </div>
   <div id="controls">
     <button onclick="runSTK33_LOUIE()">Run STK33_LOUIE</button>
-    <button onclick="runSTK33_ROGER()">Run STK33_ROGER</button>
     <button onclick="clearGrid()">Clear</button>
   </div>
   <script>
@@ -2348,46 +2363,6 @@
     function clearGrid() {
       document.querySelectorAll('.cell').forEach(cell => cell.innerHTML = '');
     }
-  
-    function runSTK33_LOUIE() {
-  insertShape(6, 25, "C", "rgb(255, 0, 0)", "rgb(255, 255, 255)");
-  insertShape(6, 21, "LT", "rgb(255, 255, 255)", "rgb(0, 0, 0)");
-  insertShape(6, 23, "LG", "rgb(255, 255, 255)", "rgb(0, 0, 0)");
-  insertShape(6, 27, "RG", "rgb(255, 255, 255)", "rgb(0, 0, 0)");
-  insertShape(6, 29, "RT", "rgb(255, 255, 255)", "rgb(0, 0, 0)");
-  insertShape(9, 5, "LC", "black", "white");
-  insertShape(9, 45, "RC", "black", "white");
-  insertShape(9, 29, "TK", "black", "white");
-  insertShape(9, 25, "NT", "black", "white");
-  insertShape(9, 21, "DE", "black", "white");
-  insertShape(12, 29, "WL", "black", "white");
-  insertShape(12, 25, "MK", "black", "white");
-  insertShape(12, 21, "SA", "black", "white");
-  insertShape(12, 39, "RS", "black", "white");
-  insertShape(16, 25, "FS", "black", "white");
-  insertShape(12, 11, "SS", "black", "white");
-
-    }
-    function runSTK33_ROGER() {
-  insertShape(26, 25, "C", "rgb(255, 0, 0)", "rgb(255, 255, 255)");
-  insertShape(26, 21, "LT", "rgb(255, 255, 255)", "rgb(0, 0, 0)");
-  insertShape(26, 23, "LG", "rgb(255, 255, 255)", "rgb(0, 0, 0)");
-  insertShape(26, 27, "RG", "rgb(255, 255, 255)", "rgb(0, 0, 0)");
-  insertShape(26, 29, "RT", "rgb(255, 255, 255)", "rgb(0, 0, 0)");
-  insertShape(29, 5, "LC", "black", "white");
-  insertShape(29, 45, "RC", "black", "white");
-  insertShape(29, 29, "TK", "black", "white");
-  insertShape(29, 25, "NT", "black", "white");
-  insertShape(29, 21, "DE", "black", "white");
-  insertShape(32, 29, "WL", "black", "white");
-  insertShape(32, 25, "MK", "black", "white");
-  insertShape(32, 21, "SA", "black", "white");
-  insertShape(32, 39, "RS", "black", "white");
-  insertShape(36, 25, "FS", "black", "white");
-  insertShape(32, 11, "SS", "black", "white");
-
-    }
-
   </script>
 </body>
 </html>
