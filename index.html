@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,8 +12,8 @@
     }
     #grid {
       display: grid;
-      grid-template-columns: repeat(50, 20px);
-      grid-template-rows: repeat(30, 14px);
+      grid-template-columns: repeat(51, 20px);
+      grid-template-rows: repeat(43, 14px);
       gap: 1px;
       background-color: #333;
     }
@@ -56,7 +57,7 @@
   <div id="controls">
     <button onclick="setMode('player')">Insert Player</button>
     <button onclick="setMode('arrow')">Insert Arrow</button>
-    <button onclick="clearGrid()">Clear</button>
+    <button onclick="clearGrid()">&nbsp;Clear&nbsp;</button>
   </div>
 
   <script>
@@ -94,7 +95,7 @@
       }
     }
 
-    createGrid(30, 50);
+    createGrid(43, 51);
   </script>
 </body>
 </html>
