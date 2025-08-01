@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Football Grid - index_01</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: white;
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(51, 20px);
+      grid-template-rows: repeat(43, 20px);
+      border: 2px solid black;
+      width: fit-content;
+    }
+    .grid-cell {
+      border: 0.25px solid #000;
+      width: 20px;
+      height: 20px;
+      box-sizing: border-box;
+    }
+    .label {
+      font-size: 10px;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      line-height: 20px;
+    }
+    .col-labels {
+      display: grid;
+      grid-template-columns: 20px repeat(51, 20px);
+      margin-left: 20px;
+      width: fit-content;
+    }
+    .row-labels-container {
+      display: grid;
+      grid-template-rows: repeat(43, 20px);
+    }
+    .grid-wrapper {
+      display: flex;
+      flex-direction: row;
+      margin-left: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="col-labels">
+    <div class="label"></div>
+    <!-- A to AY (51 columns) -->
+    <script>
+      function getExcelColumnName(n) {
+        let s = '';
+        while (n >= 0) {
+          s = String.fromCharCode((n % 26) + 65) + s;
+          n = Math.floor(n / 26) - 1;
+        }
+        return s;
+      }
+      const colLabels = [];
+      for (let i = 0; i < 51; i++) {
+        colLabels.push(getExcelColumnName(i));
+      }
+      document.write(colLabels.map(l => `<div class='label'>${l}</div>`).join(''));
+    </script>
+  </div>
+
+  <div class="grid-wrapper">
+    <div class="row-labels-container">
+      <!-- 1 to 43 -->
+      <script>
+        for (let i = 1; i <= 43; i++) {
+          document.write(`<div class='label'>${i}</div>`);
+        }
+      </script>
+    </div>
+
+    <div class="grid-container">
+      <!-- 43 rows x 51 columns -->
+      <script>
+        for (let i = 0; i < 43 * 51; i++) {
+          document.write('<div class="grid-cell"></div>');
+        }
+      </script>
+    </div>
+  </div>
+</body>
+</html>
