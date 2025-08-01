@@ -15,7 +15,7 @@
       grid-template-columns: repeat(51, 20px);
       grid-template-rows: repeat(43, 20px);
       border: 2px solid black;
-      margin: 20px 0 20px 20px;
+      margin: 0 0 0 20px;
       width: fit-content;
     }
     .grid-cell {
@@ -32,7 +32,7 @@
       align-items: center;
     }
     .col-labels {
-      margin-left: 20px;
+      margin: 0 0 0 20px;
       display: grid;
       grid-template-columns: repeat(51, 20px);
       width: fit-content;
@@ -40,14 +40,13 @@
     .row-labels-container {
       display: grid;
       grid-template-rows: repeat(43, 20px);
-      position: absolute;
-      left: 0px;
-      top: 40px;
+      margin-top: 20px;
+      margin-left: 0;
     }
     .grid-wrapper {
       display: flex;
       flex-direction: row;
-      position: relative;
+      margin-top: 0;
     }
   </style>
 </head>
@@ -75,7 +74,7 @@
     <div class="row-labels-container">
       <!-- 1 to 43 -->
       <script>
-        for (let i = 0; i <= 43; i++) {
+        for (let i = 1; i <= 43; i++) {
           document.write(`<div class='row-labels'>${i}</div>`);
         }
       </script>
