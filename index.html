@@ -15,7 +15,6 @@
       grid-template-columns: repeat(51, 20px);
       grid-template-rows: repeat(43, 20px);
       border: 2px solid black;
-      margin: 0 0 0 20px;
       width: fit-content;
     }
     .grid-cell {
@@ -24,34 +23,35 @@
       height: 20px;
       box-sizing: border-box;
     }
-    .row-labels, .col-labels {
-      display: flex;
+    .label {
       font-size: 10px;
       font-weight: bold;
+      display: flex;
       justify-content: center;
       align-items: center;
+      text-align: center;
+      line-height: 20px;
     }
     .col-labels {
-      margin: 0 0 0 20px;
       display: grid;
-      grid-template-columns: repeat(51, 20px);
+      grid-template-columns: 20px repeat(51, 20px);
+      margin-left: 20px;
       width: fit-content;
     }
     .row-labels-container {
       display: grid;
       grid-template-rows: repeat(43, 20px);
-      margin-top: 20px;
-      margin-left: 0;
     }
     .grid-wrapper {
       display: flex;
       flex-direction: row;
-      margin-top: 0;
+      margin-left: 20px;
     }
   </style>
 </head>
 <body>
   <div class="col-labels">
+    <div class="label"></div>
     <!-- A to AY (51 columns) -->
     <script>
       function getExcelColumnName(n) {
@@ -66,7 +66,7 @@
       for (let i = 0; i < 51; i++) {
         colLabels.push(getExcelColumnName(i));
       }
-      document.write(colLabels.map(l => `<div class='row-labels'>${l}</div>`).join(''));
+      document.write(colLabels.map(l => `<div class='label'>${l}</div>`).join(''));
     </script>
   </div>
 
@@ -75,7 +75,7 @@
       <!-- 1 to 43 -->
       <script>
         for (let i = 1; i <= 43; i++) {
-          document.write(`<div class='row-labels'>${i}</div>`);
+          document.write(`<div class='label'>${i}</div>`);
         }
       </script>
     </div>
@@ -88,6 +88,9 @@
         }
       </script>
     </div>
+  </div>
+</body>
+</html>
   </div>
 </body>
 </html>
