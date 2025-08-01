@@ -19,7 +19,7 @@
       width: fit-content;
     }
     .grid-cell {
-      border: 0.5px solid #000;
+      border: 0.25px solid #000;
       width: 20px;
       height: 20px;
       box-sizing: border-box;
@@ -55,11 +55,17 @@
   <div class="col-labels">
     <!-- A to AY (51 columns) -->
     <script>
+      function getExcelColumnName(n) {
+        let s = '';
+        while (n >= 0) {
+          s = String.fromCharCode((n % 26) + 65) + s;
+          n = Math.floor(n / 26) - 1;
+        }
+        return s;
+      }
       const colLabels = [];
       for (let i = 0; i < 51; i++) {
-        const first = String.fromCharCode(65 + (i % 26));
-        const second = i >= 26 ? String.fromCharCode(65 + Math.floor(i / 26) - 1) : '';
-        colLabels.push(first + second);
+        colLabels.push(getExcelColumnName(i));
       }
       document.write(colLabels.map(l => `<div class='row-labels'>${l}</div>`).join(''));
     </script>
